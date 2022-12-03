@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.ProfileFragment"
+    android:backgroundTint="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgDefaultUser"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_user_image"/>
+
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/imgDefaultUser"
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_profile_image"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_toEndOf="@+id/txtProfile"
+        android:layout_below="@+id/imgDefaultUser"/>
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_toEndOf="@+id/txtProfile"
+        android:text="@string/pratiksha_kore"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/hBreak1"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/UserName"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/txtAbout"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/hBreak1"
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_about"/>
+
+    <TextView
+        android:id="@+id/txtBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hBreak1"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/txtAbout"
+        android:hint="@string/bio" />
+
+    <TextView
+        android:id="@+id/UserBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tarvelling_in_my_mind"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/txtAbout"
+        android:layout_below="@+id/txtBio"/>
+
+    <View
+        android:id="@+id/hBreak2"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/UserBio"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="64dp"/>
+
+    <TextView
+        android:id="@+id/txtDrawablePhone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/hBreak2"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:drawableStartCompat="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:layout_toEndOf="@+id/txtDrawablePhone"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/hBreak2"/>
+
+    <TextView
+        android:id="@+id/UserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhone"
+        android:layout_toEndOf="@+id/txtDrawablePhone"
+        android:text="@string/_4242424242"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/hBreak3"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/UserPhone"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="64dp"/>
+
+    <TextView
+        android:id="@+id/txtDrawableEmail"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/hBreak3"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:drawableStartCompat="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_toEndOf="@+id/txtDrawableEmail"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/hBreak3"/>
+
+    <TextView
+        android:id="@+id/Useremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_toEndOf="@+id/txtDrawableEmail"
+        android:text="@string/pratzk_bookhub_com"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/hBreak4"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/Useremail"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="64dp"/>
+
+    <TextView
+        android:id="@+id/txtDrawableAddress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/hBreak4"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:drawableStartCompat="@drawable/ic_address" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:layout_toEndOf="@+id/txtDrawableAddress"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/hBreak4"/>
+
+    <TextView
+        android:id="@+id/UserAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:layout_toEndOf="@+id/txtDrawableAddress"
+        android:text="@string/mumbai_india"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/hBreak5"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/UserAddress"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="64dp"/>
+
+
+</RelativeLayout>
